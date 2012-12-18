@@ -1,0 +1,10 @@
+/* Inline Group Styles */
+
+/* This group will only have 2 elements(children) */
+.inline > *:first-child {
+  //CSS Code goes here
+}
+
+.inline > *:last-child {
+  //CSS Code goes here
+}
