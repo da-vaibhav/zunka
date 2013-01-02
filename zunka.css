@@ -12,6 +12,6 @@
 
 
 /* EMPTY Group Styles */
-/* This group will hide elements that are empty Such as all error message contaiers that are empty should be hidden */
+/* This group will hide elements that are empty Such as all error message contaiers that are empty should be hidden regardsless of their style properties. Such as Border, padding */
 
 *[class="error"]:empty {display: none; height: 0; font-size: 0; visibility: hidden;}
