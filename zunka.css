@@ -1,10 +1,11 @@
 /* Inline Group Styles */
 
 /* This group will only have 2 elements(children) */
+/* Parent element must have class named 'inline' */
 .inline > *:first-child {
-  /*CSS Code goes here*/
+  float: left;
 }
 
 .inline > *:last-child {
-  /*CSS Code goes here*/
+  float: right;
 }
