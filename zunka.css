@@ -1,7 +1,7 @@
-/* Inline Group Styles */
+/* INLINE Group Styles */
 
-/* This group will only have 2 elements(children) */
-/* Parent element must have class named 'inline' */
+/* This group will only have 2 elements(children) Parent element must have class named 'inline' */
+
 .inline > *:first-child {
   float: left;
 }
@@ -9,3 +9,9 @@
 .inline > *:last-child {
   float: right;
 }
+
+
+/* EMPTY Group Styles */
+/* This group will hide elements that are empty Such as all error message contaiers that are empty should be hidden */
+
+*[class="error"]:empty {display: none; height: 0; font-size: 0; visibility: hidden;}
