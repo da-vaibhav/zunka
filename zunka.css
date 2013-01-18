@@ -1,5 +1,8 @@
-/* INLINE Group Styles */
+/* @Group Base Styles */
+/*  Targetting all to appply the right BOX MODEL */
+* {box-sizing: border-box;}
 
+/* @Group INLINE Group Styles */
 /* This group will only have 2 elements(children) Parent element must have class named 'inline' */
 .inline {box-sizing: border-box; padding: 1% 2%;}
 
@@ -12,7 +15,7 @@
 }
 
 
-/* EMPTY Group Styles */
+/* @Group EMPTY Group Styles */
 /* This group will hide elements that are empty Such as all error message contaiers that are empty should be hidden regardsless of their style properties. Such as Border, padding */
 /* Anything that has a class error & not just class error but multiple classes at the same time will be hidden.  */
 *[class~="error"]:empty {display: none; height: 0; font-size: 0; visibility: hidden;}
