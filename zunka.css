@@ -1,6 +1,7 @@
 /* INLINE Group Styles */
 
 /* This group will only have 2 elements(children) Parent element must have class named 'inline' */
+.inline {box-sizing: border-box; padding: 1% 2%;}
 
 .inline > *:first-child {
   float: left;
