@@ -27,9 +27,7 @@ table th, table td {border: #ddd solid 1px; padding: 0.5em;}
 /* @Group INLINE Group Styles */
 /* This group will only have 2 elements(children) Parent element must have class named 'inline' */
 .inline {padding: 1% 2%;}
-
 .inline > *:first-child {float: left;}
-
 .inline > *:last-child {float: right;}
 
 /* @Group EMPTY Group Styles */
