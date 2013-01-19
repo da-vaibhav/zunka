@@ -1,6 +1,15 @@
 /* @Group Base Styles */
 /*  Targetting all to appply the right BOX MODEL */
-* {box-sizing: border-box;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+/*  Making all images, flash objects, elements, audio & video responsive in the document */
+img, object, embed, audio, video {display: block; max-width: 100%;}
+
+/*  Removing user agent's default numbering for ordered & unordered lists   */
+ul, ol {list-style: none;}
+
+/*  Clearing floats in the document using :after pseudo class */
+.clearfix:after {content: "."; display: block; height: 0; visibility: hidden; clear: both; float: none; font-size: 0;}
 
 /* @Group INLINE Group Styles */
 /* This group will only have 2 elements(children) Parent element must have class named 'inline' */
