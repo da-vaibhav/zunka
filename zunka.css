@@ -2,6 +2,12 @@
 /*  Targetting all to appply the right BOX MODEL */
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
+/*   Setting the font type to Relative for Webkit engines as well as Microsoft proprietary engines */
+html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* Removing user agent's default borders */
+img, fieldset {border: none;}
+
 /*  Making all images, flash objects, elements, audio & video responsive in the document */
 img, object, embed, audio, video {display: block; max-width: 100%;}
 
@@ -10,6 +16,13 @@ ul, ol {list-style: none;}
 
 /*  Clearing floats in the document using :after pseudo class */
 .clearfix:after {content: "."; display: block; height: 0; visibility: hidden; clear: both; float: none; font-size: 0;}
+
+/* Removing user agent's default underline */
+a[href], a {text-decoration: none;}
+
+/*  Collapsing the double borders on Table elements such as TH, TD & removing cellspacing by default*/
+table {border-collapse: collapse; border-spacing: 0;}
+table th, table td {border: #ddd solid 1px; padding: 0.5em;}
 
 /* @Group INLINE Group Styles */
 /* This group will only have 2 elements(children) Parent element must have class named 'inline' */
