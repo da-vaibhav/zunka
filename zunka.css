@@ -3,7 +3,7 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
 /*   Setting the font type to Relative for Webkit engines as well as Microsoft proprietary engines */
-html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; line-height: 1.5}
 
 /* Removing user agent's default borders */
 img, fieldset {border: none;}
