@@ -34,3 +34,7 @@ table th, table td {border: #ddd solid 1px; padding: 0.5em;}
 /* This group will hide elements that are empty Such as all error message contaiers that are empty should be hidden regardsless of their style properties. Such as Border, padding */
 /* Anything that has a class error & not just class error but multiple classes at the same time will be hidden.  */
 *:empty, *[class~="error"]:empty {display: none; height: 0; font-size: 0; visibility: hidden;}
+
+
+/* @Group Form Elements Styles */
+input[type="text"], input[type="password"], textarea {outline: none; width: 100%; padding: 1%;}
