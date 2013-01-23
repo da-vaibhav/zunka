@@ -41,6 +41,6 @@ input[type="text"], input[type="password"], textarea {outline: none; width: 100%
 
 /* @Group Block Form Styles */
 
-.blockform > label {float: left; width: 25%;}
-.blockform > label + input[type="text"], .blockform > label + input[type="password"] {float: right; width: 70%;}
-.blockform textarea {padding: 1%;}
+.blockForm > label {float: left; width: 25%;}
+.blockForm > label + input[type="text"], .blockForm > label + input[type="password"] {float: right; width: 70%;}
+.blockForm textarea {padding: 1%;}
