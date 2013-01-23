@@ -38,3 +38,9 @@ table th, table td {border: #ddd solid 1px; padding: 0.5em;}
 
 /* @Group Form Elements Styles */
 input[type="text"], input[type="password"], textarea {outline: none; width: 100%; padding: 1%;}
+
+/* @Group Block Form Styles */
+
+.blockform > label {float: left; width: 25%;}
+.blockform > label + input[type="text"], .blockform > label + input[type="password"] {float: right; width: 70%;}
+.blockform textarea {padding: 1%;}
