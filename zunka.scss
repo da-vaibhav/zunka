@@ -1,1 +1,4 @@
-/*  This is SCSS file  */
+@import "global/_reset.scss";
+@import "global/typography.scss";
+
+p {@include font(bold, 40px, Avenir);}

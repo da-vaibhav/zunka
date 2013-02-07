@@ -1,0 +1,12 @@
+$context: 16px;
+$unitRelative: em;
+
+/* FONT SHORTHAND */
+@mixin font($fontWeight, $lineHeight, $fontFamily){
+	font-weight: $fontWeight; @include font_size(60px); line-height: $lineHeight; font-family: $fontFamily;
+}
+
+/* RELATIVE FONT SIZES */
+@mixin font_size($target){
+	font-size: $target/$context#{$unitRelative};
+}
