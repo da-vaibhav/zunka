@@ -1,4 +1,3 @@
-@import "global/_reset.scss";
-@import "global/typography.scss";
-
-p {@include font(bold, 40px, Avenir);}
+@import "global/_reset";
+@import "global/typography";
+@import "global/_liquid";

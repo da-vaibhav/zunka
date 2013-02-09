@@ -1,4 +1,5 @@
 /* Constants */
+$linkColor: #333; //Base link color
 $context: 16px; //Base browser font size
 $unitRelative: em; //Relative font size unit
 
@@ -13,4 +14,9 @@ $unitRelative: em; //Relative font size unit
 /* RELATIVE FONT SIZES */
 @mixin font_size($target){
 	font-size: $target/$context#{$unitRelative}; // Target / Context = Result
+}
+
+a {
+	text-decoration: none;
+	&:hover {text-decoration: underline;}
 }
