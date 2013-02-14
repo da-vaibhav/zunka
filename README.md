@@ -15,3 +15,9 @@ mixins:
 
 1. @mixin @mixin border_radius: (radius width)
 2. @mixin text_shadow: (X Spread, Y spread, thickness, color of the shadow)
+
+_liquid
+
+functions:
+
+1. @function liquid_layout(target value, context value) => output would be in percentage
