@@ -6,3 +6,7 @@
     -khtml-border-radius: $radiusWidth;
     border-radius: $radiusWidth;
 }
+
+@mixin text_shadow($xSpread, $ySpread, $thickness, $shadowColor) {
+	text-shadow: $xSpread $ySpread $thickness $shadowColor;
+}
