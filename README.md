@@ -13,10 +13,11 @@ _css3.scss
 
 mixins:
 
-1. @mixin @mixin border_radius: (radius width)
-2. @mixin text_shadow: (X Spread, Y spread, thickness, color of the shadow)
+1. @mixin Box Sizing - Just include the mixin
+2. @mixin border_radius: (radius width)
+3. @mixin text_shadow: (X Spread, Y spread, thickness, color of the shadow)
 
-_liquid
+_liquid.scss
 
 functions:
 
