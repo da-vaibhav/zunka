@@ -15,3 +15,9 @@
 @mixin text_shadow($xSpread, $ySpread, $thickness, $shadowColor) {
 	text-shadow: $xSpread $ySpread $thickness $shadowColor;
 }
+
+@mixin box_shadow($horizontal, $vertical, $spread, $color){
+    -webkit-box-shadow: $horizontal $vertical $spread $color;
+    -moz-box-shadow: $horizontal $vertical $spread $color;
+    box-shadow: $horizontal $vertical $spread $color;
+}
