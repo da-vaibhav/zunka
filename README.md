@@ -16,6 +16,7 @@ mixins:
 1. @mixin Box Sizing - Just include the mixin
 2. @mixin border_radius: (radius width)
 3. @mixin text_shadow: (X Spread, Y spread, thickness, color of the shadow)
+4. @mixin box_shadow: (horizontalSpread, verticalSpread, generalSpreadofColor, HexColorValue){
 
 _liquid.scss
 
