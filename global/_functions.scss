@@ -1,0 +1,19 @@
+// Use case:
+//.sidebar {width: liquid_layout(360, 960);
+
+@function liquid_layout($target, $context) {
+	$result : ($target / $context) * 100;
+	@return $result#{'%'};
+}
+
+// Use case:
+//@include sticky_footer('.wrap', '.wrapper', '.footer', 80px);
+
+@mixin sticky_footer($wrapSelector, $wrapperSelector, $footerSelector, $footerHeight){
+	//Important Note: in order to successfully use this mixin, developer must have 
+	//wrapSelector is that wraps the wrapperSelector
+	//footer selector will be an immediate sibling of wrapSelector
+	#{$wrapSelector} {min-height: 100%;}
+	#{$wrapperSelector} {overflow:auto; padding-bottom: $footerHeight;}
+	#{$footerSelector} {position: relative; margin-top: -#{$footerHeight}; height: $footerHeight; clear:both;}
+}

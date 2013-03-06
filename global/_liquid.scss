@@ -1,7 +1,0 @@
-// Use case:
-//.sidebar {width: liquid_layout(360, 960)#{'%'};
-
-@function liquid_layout($target, $context) {
-	$result = ($target / $context) * 100;
-	@return $result#{'%'};
-}
