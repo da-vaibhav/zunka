@@ -4,8 +4,9 @@ $context: 16px; //Base browser font size
 $unitRelative: em; //Relative font size unit
 
 /* FONT SHORTHAND */
-@mixin font($fontWeight, $fontSize, $lineHeight, $fontFamily){
+@mixin font($fontWeight, $fontStyle, $fontSize, $lineHeight, $fontFamily){
 	font-weight: $fontWeight;
+	font-style: $fontStyle;
 	@include font_size($fontSize);
 	line-height: $lineHeight;
 	font-family: $fontFamily;
