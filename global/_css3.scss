@@ -21,3 +21,11 @@
     -moz-box-shadow: $horizontal $vertical $spread $color;
     box-shadow: $horizontal $vertical $spread $color;
 }
+
+@mixin opacity($depth){
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$depth})";
+	filter: alpha(opacity=$depth);
+	-moz-opacity: $depth;
+	-khtml-opacity: $depth;
+	opacity: $depth;
+}
