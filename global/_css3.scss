@@ -21,3 +21,8 @@
     -moz-box-shadow: $horizontal $vertical $spread $color;
     box-shadow: $horizontal $vertical $spread $color;
 }
+
+@mixin opacity($opacity) {
+    filter: alpha(opacity=#{$opacity});
+    opacity: $opacity;
+}
