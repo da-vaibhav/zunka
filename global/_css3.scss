@@ -8,7 +8,6 @@
     -webkit-border-radius: $radiusWidth;
     -o-border-radius: $radiusWidth;
     -ms-border-radius: $radiusWidth;
-    -khtml-border-radius: $radiusWidth;
     border-radius: $radiusWidth;
 }
 
@@ -22,10 +21,19 @@
     box-shadow: $horizontal $vertical $spread $color;
 }
 
+@mixin font_face($name, $fontsPath){
+	@font-face {
+		font-family: '#{$name}';
+		src: url('$fontsPath/#{$name}/#{$name}.eot');
+		src: url('$fontsPath/#{$name}/#{$name}.eot?#iefix') format('embedded-opentype'),
+		url('$fontsPath/#{$name}/#{$name}.woff') format('woff'),
+		url('$fontsPath/#{$name}/#{$name}.ttf')  format('truetype'),
+		url('$fontsPath/#{$name}/#{$name}.svg#svgFontName') format('svg');
+	}
+}
+
 @mixin opacity($opacityValue){
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacityValue})";
-	filter: alpha(opacity=$opacityValue);
-	-moz-opacity: $opacityValue;
-	-khtml-opacity: $opacityValue;
 	opacity: $opacityValue;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacityValue * 100})"; //IE8
+	filter: alpha(opacity=$opacityValue * 100); //IE8
 }
