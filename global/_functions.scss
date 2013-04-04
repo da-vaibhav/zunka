@@ -1,13 +1,32 @@
-// Use case:
-//.sidebar {width: liquid_layout(360, 960);
+/* Constants */
+
+$context: 16px; //Base browser font size
+$unitRelative: em; //Relative font size unit
+
+//Getting relative widths percentage
+/* Use case => .sidebar {width: liquid_layout(360, 960); */
 
 @function liquid_layout($target, $context) {
 	$result : ($target / $context) * 100;
 	@return $result#{'%'};
 }
 
-// Use case:
-//@include sticky_footer('.wrap', '.wrapper', '.footer', 80px);
+//Getting Relative Font Sizes
+/*  Target / Context = Result */
+
+@function relativeFontSize($target) {
+	@return $target/$context#{'em'};
+}
+
+/* FONT SHORTHAND */
+@mixin font($fontWeight, $fontStyle, $fontSize, $lineHeight, $fontFamily){
+	$fontsize: relativeFontSize($fontSize);
+	font: #{$fontWeight} #{$fontStyle} #{$fontsize}/#{$lineHeight} #{$fontFamily};
+}
+
+
+//Getting the sticky footer
+/*  Use case => @include sticky_footer('.wrap', '.wrapper', '.footer', 80px); */
 
 @mixin sticky_footer($wrapSelector, $wrapperSelector, $footerSelector, $footerHeight){
 	//Important Note: in order to successfully use this mixin, developer must have 

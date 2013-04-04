@@ -1,21 +1,5 @@
 /* Constants */
 $linkColor: #333; //Base link color
-$context: 16px; //Base browser font size
-$unitRelative: em; //Relative font size unit
-
-/* FONT SHORTHAND */
-@mixin font($fontWeight, $fontStyle, $fontSize, $lineHeight, $fontFamily){
-	font-weight: $fontWeight;
-	font-style: $fontStyle;
-	@include font_size($fontSize);
-	line-height: $lineHeight;
-	font-family: $fontFamily;
-}
-
-/* RELATIVE FONT SIZES */
-@mixin font_size($target){
-	font-size: $target/$context#{$unitRelative}; // Target / Context = Result
-}
 
 a {
 	color: $linkColor;

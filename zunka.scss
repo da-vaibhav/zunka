@@ -1,6 +1,7 @@
 @import "global/_css3";
 @import "global/_reset";
 @import "global/_typography";
-@import "global/_liquid";
+@import "global/_functions";
+@import "global/_mixins";
 
-p {@include font(normal, 20px, 28px, Avenir); width: liquid_layout(500, 1000);}
+//p {@include font(normal, normal, 20px, 28px, Avenir); width: liquid_layout(500, 1000);}
