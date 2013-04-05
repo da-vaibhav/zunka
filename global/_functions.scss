@@ -15,7 +15,7 @@ $unitRelative: em; //Relative font size unit
 /*  Target / Context = Result */
 
 @function relativeFontSize($target) {
-	@return $target/$context#{'em'};
+	@return $target/$context#{$unitRelative};
 }
 
 /* FONT SHORTHAND */
