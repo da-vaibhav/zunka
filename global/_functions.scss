@@ -21,7 +21,7 @@ $unitRelative: em; //Relative font size unit
 /* FONT SHORTHAND */
 @mixin font($fontWeight, $fontStyle, $fontSize, $lineHeight, $fontFamily){
 	$fontsize: relativeFontSize($fontSize);
-	font: #{$fontWeight} #{$fontStyle} #{$fontsize}/#{$lineHeight} #{$fontFamily};
+	font: #{$fontWeight} #{$fontStyle} #{$fontsize}/#{$lineHeight/$context}#{$unitRelative} #{$fontFamily};
 }
 
 
