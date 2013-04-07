@@ -14,14 +14,18 @@ $unitRelative: em; //Relative font size unit
 //Getting Relative Font Sizes
 /*  Target / Context = Result */
 
-@function relativeFontSize($target) {
-	@return $target/$context#{$unitRelative};
+@function relativeValue($target) {
+	$fontsize: $target/$context#{$unitRelative};
+	$lineheight: $target/$context#{$unitRelative};
+	@return $fontsize;
+	@return $lineheight;
 }
 
 /* FONT SHORTHAND */
 @mixin font($fontWeight, $fontStyle, $fontSize, $lineHeight, $fontFamily){
-	$fontsize: relativeFontSize($fontSize);
-	font: #{$fontWeight} #{$fontStyle} #{$fontsize}/#{$lineHeight/$context}#{$unitRelative} #{$fontFamily};
+	$fontsize: relativeValue($fontSize);
+	$lineheight: relativeValue($lineHeight);
+	font: #{$fontWeight} #{$fontStyle} #{$fontsize}/#{$lineheight} #{$fontFamily};
 }
 
 
