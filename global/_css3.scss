@@ -15,10 +15,10 @@
 	text-shadow: $xSpread $ySpread $thickness $shadowColor;
 }
 
-@mixin box_shadow($horizontal, $vertical, $spread, $color){
-    -webkit-box-shadow: $horizontal $vertical $spread $color;
-    -moz-box-shadow: $horizontal $vertical $spread $color;
-    box-shadow: $horizontal $vertical $spread $color;
+@mixin box_shadow($horizontalDir, $verticalDir, $horizontalSpread, $verticalSpread, $color){
+    -webkit-box-shadow: $horizontalDir $verticalDir $horizontalSpread $verticalSpread $color;
+    -moz-box-shadow: $horizontalDir $verticalDir $horizontalSpread $verticalSpread $color;
+    box-shadow: $horizontalDir $verticalDir $horizontalSpread $verticalSpread $color;
 }
 
 @mixin font_face($name, $fontsPath){
