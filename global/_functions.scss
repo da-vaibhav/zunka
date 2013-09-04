@@ -1,7 +1,7 @@
 /* Constants */
 
 $context: 16px; //Base browser font size
-$unitRelative: em; //Relative font size unit
+$unitRelative: rem; //Relative font size unit
 
 //Getting relative widths percentage
 /* Use case => .sidebar {width: liquid_layout(360, 960); */
